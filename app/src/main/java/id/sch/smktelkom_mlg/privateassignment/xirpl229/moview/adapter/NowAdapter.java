@@ -43,6 +43,7 @@ public class NowAdapter extends RecyclerView.Adapter<NowAdapter.ViewHolder> {
         Result result = list.get(position);
         holder.tvName.setText(result.title);
         holder.tvDesc.setText(result.overview);
+        holder.tvDate.setText(result.release_date);
         Glide.with(context)
                 .load("http://image.tmdb.org/t/p/w500" + result.poster_path)
                 .into(holder.ivPoster);
@@ -63,11 +64,13 @@ public class NowAdapter extends RecyclerView.Adapter<NowAdapter.ViewHolder> {
         TextView tvName;
         TextView tvDesc;
         ImageView ivPoster;
+        TextView tvDate;
 
         public ViewHolder(View itemView) {
             super(itemView);
             tvName = (TextView) itemView.findViewById(R.id.textViewName);
             tvDesc = (TextView) itemView.findViewById(R.id.textViewDesc);
+            tvDate = (TextView) itemView.findViewById(R.id.textViewDate);
             ivPoster = (ImageView) itemView.findViewById(R.id.imageViewPoster);
         }
     }
