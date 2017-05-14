@@ -6,7 +6,7 @@ Moview
 Nama : Tri Ratna Putri Chrisdaniar<br>
 Kelas : XI RPL 2 <br>
 No Urut : 29 <br>
-NIS : <br>
+NIS :  4844/1563.070<br>
 Angkatan : 24 <br>
 Nama Sekolah : SMK Telkom Malang <br>
 
@@ -15,7 +15,7 @@ https://api.themoviedb.org/3/movie/now_playing?api_key=e01c1c0d1c7cb929c436676de
 https://api.themoviedb.org/3/movie/popular?api_key=e01c1c0d1c7cb929c436676de5a1cf66& <br>
 https://api.themoviedb.org/3/movie/upcoming?api_key=e01c1c0d1c7cb929c436676de5a1cf66& <br>
 
-# Jenis Navigadi yang digunakan pada Aplikasi
+# Jenis Navigasi yang digunakan pada Aplikasi
 Navigation Drawer 
 
 # Library dari Local Database yang digunakan dalam aplikasi
