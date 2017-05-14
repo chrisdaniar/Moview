@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,8 +14,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl229.moview.adapter.NowAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl229.moview.adapter.PopularAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl229.moview.adapter.SoonAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl229.moview.fragment.NowFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl229.moview.fragment.PopularFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl229.moview.fragment.SoonFragment;
+
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, SoonAdapter.ISoonAdapter, NowAdapter.ISourceAdapter, PopularAdapter.IPopularAdapter {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +48,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        changePage(R.id.nav_camera);
+        navigationView.setCheckedItem(R.id.nav_camera);
     }
+
 
     @Override
     public void onBackPressed() {
@@ -77,15 +89,21 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        changePage(id);
+        return true;
+    }
+
+    private void changePage(int id) {
+        Fragment fragment = null;
+
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            fragment = new SoonFragment();
         } else if (id == R.id.nav_gallery) {
-
+            fragment = new NowFragment();
         } else if (id == R.id.nav_slideshow) {
-
+            fragment = new PopularFragment();
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
@@ -93,9 +111,14 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commitNow();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
+
+    }
+
+    @Override
+    public void showArticles(String title, String overview, String poster_path) {
+
     }
 }
