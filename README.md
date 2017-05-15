@@ -1,7 +1,7 @@
 # Nama Aplikasi
 Moview
 # Link File APK release dari Aplikasi
-https://drive.google.com/file/d/0B6FrmOuyjL1-WFg3V1did1dHTmM/view?usp=sharing
+https://drive.google.com/file/d/0B6FrmOuyjL1-MjhQZXFldUZfWU0/view?usp=sharing
 
 # Identitas Siswa
 Nama : Tri Ratna Putri Chrisdaniar<br>
@@ -32,4 +32,7 @@ Memiliki tampilan yang menarik
 ![now](https://cloud.githubusercontent.com/assets/22118129/26038338/6301635e-3930-11e7-9e0f-ea9c184d3a9c.PNG)
 ![noww](https://cloud.githubusercontent.com/assets/22118129/26038336/60a5ff48-3930-11e7-93c5-aa6c050737b0.PNG)
 ![popular](https://cloud.githubusercontent.com/assets/22118129/26038339/63a0868c-3930-11e7-835a-3549e4173ff3.PNG)
+![baru1](https://cloud.githubusercontent.com/assets/22118129/26044498/eb06569a-396e-11e7-9e86-8693a10b56a3.PNG)
+![baru2](https://cloud.githubusercontent.com/assets/22118129/26044499/eb2dff10-396e-11e7-916c-f242219afb4a.PNG)
+
 
