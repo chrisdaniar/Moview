@@ -19,10 +19,13 @@ https://api.themoviedb.org/3/movie/upcoming?api_key=e01c1c0d1c7cb929c436676de5a1
 # Jenis Navigasi yang digunakan pada Aplikasi
 Navigation Drawer 
 
+# Library dan Local database yang digunakan 
+LocalDataBase Sql lite
+
 # Deskripsi singkat dari aplikasi
-Memudahkan mencari referensi film yang sedang popular
-Memudahkan mengetahui film yang akan segera tayang
-Memudahkan mengetahui film yang sedang tayang
+Memudahkan mencari referensi film yang sedang popular <br>
+Memudahkan mengetahui film yang akan segera tayang <br>
+Memudahkan mengetahui film yang sedang tayang<br>
 
 # Kelebihan dari Aplikasi menurut kalian
 Memiliki tampilan yang menarik
